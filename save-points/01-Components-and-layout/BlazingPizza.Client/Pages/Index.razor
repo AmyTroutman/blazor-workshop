@@ -18,6 +18,10 @@
         }
     </ul>
 </div>
+@if (showingConfigureDialog)
+{
+    <ConfigurePizzaDialog Pizza="configuringPizza" />
+}
 
 @code {
     List<PizzaSpecial> specials;
